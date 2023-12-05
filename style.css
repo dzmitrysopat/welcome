@@ -264,7 +264,7 @@ div.square:hover{
     position: relative;
 }
 
-#vacations > article{
+#vacations > section > div > div > article{
     height: 60vh;
     align-self: stretch; 
     display: flex;
@@ -278,51 +278,50 @@ div.square:hover{
     width: fit-content;
 }
 
-#vacations > article >h3{
+#vacations > section > div > div > article > h3{
     /* color: #fafafa; */
 }
 
-#vacations > article:hover{
+#vacations > section > div > div > article:hover{
     scale: 1.05;
     opacity: 1;
 }
 
-#vacations > article > p{
+#vacations > section > div > div > article > p{
     font-size: 1.1rem;
     color: #636363;
 }
 
-#vacations > article:first-child
-{
+#vacations > section > div > div > article:first-child{
     background-color: #e5ab93;
     width: fit-content;
 }
 
-#vacations > article:nth-child(2){
+#vacations > section > div > div > article:nth-child(2){
     background-color: #93b9e5;
 }
 
-#vacations > article:nth-child(3){
+#vacations > section > div > div > article:nth-child(3){
     background-color: #e5dd93;
 }
 
-#vacations > article:nth-child(4){
+#vacations > section > div > div > article:nth-child(4){
     background-color: #a3e593;
 }
 
-#vacations > article:nth-child(5){
+#vacations > section > div > div > article:nth-child(5){
     background-color: #a293e5;
 }
 
-#vacations > article:nth-child(2) > img.user{
+#vacations > section > div > div > article:nth-child(2) > img.user{
     width: 150px;
 }
 
-#vacations > article:nth-child(4) > img.user{
+#vacations > section > div > div > article:nth-child(4) > img.user{
     width: 275px;
 }
 
-#vacations > article:nth-child(5) > img.user{
+#vacations > section > div > div > article:nth-child(5) > img.user{
     width: 192px;
 }
 
@@ -582,9 +581,9 @@ div.skill-item{
 } 
 
 /* slider */
-.swiper{
+#vacations > .swiper{
     position: relative;
-    width: 400px;
+    max-width: 500px;
 }
 
 span.swiper-pagination-bullet{
@@ -599,7 +598,6 @@ span.swiper-pagination-bullet-active{
     background-color: #004673;
     opacity: 1;
 }
-
 
 div.swiper-button-next,
 div.swiper-button-prev{
