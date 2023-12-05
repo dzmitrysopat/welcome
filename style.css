@@ -573,7 +573,7 @@ section.container > div.parent-card:first-child{
 }
 
 div.skill-item{
-    gap: 10px;
+    gap: 15px;
     padding: 15px;
     display: flex;
     text-align: left;
