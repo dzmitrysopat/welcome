@@ -238,7 +238,7 @@ div.square{
     transition: all .4s;
 }
 
-div > i{
+div.square > i{
     color: #fafafa;
     font-size: 40px;
     position: absolute;
@@ -291,7 +291,8 @@ div.square:hover{
     color: #636363;
 }
 
-#vacations > article:first-child{
+#vacations > article:first-child
+{
     background-color: #e5ab93;
     width: fit-content;
 }
@@ -403,11 +404,12 @@ hr{
     }
 
     #gift > article{
+        margin-top: 50px;
         display: flex;
         gap: 50px;
         align-items: flex-end;
         justify-content: space-evenly;
-        flex-wrap: wrap;
+        /* flex-wrap: wrap; */
     }
 
     #gift > article > div{
@@ -417,7 +419,8 @@ hr{
     }
 
     #gift > article >div > h3{
-        color: #004673; font-size: 30px;
+        color: #004673;
+         font-size: 30px;
         text-align: center;
     }
 
@@ -429,4 +432,149 @@ hr{
         width: 220px;
     }
 
-    
+
+/* Contacts block */
+
+#contacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.parent-card{
+    gap: 25px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    /* border-radius: 10px; */
+    align-items: center;
+    padding: 25px 40px;
+}
+
+a.card{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 125px;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    /* border-radius: 10px; */
+    text-align: center;
+    padding: 15px 20px;
+    transition: all .4s;
+}
+
+#contact > .container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.parent-card > a.card{
+    padding: 10px 50px 10px 10px;
+}
+
+a.card > .skill-item{
+    padding: 0;
+}
+
+a.card:hover > i,
+a.card:hover > h4,
+a.card:hover > div.skill-item > i,
+.skill-item:hover > i,
+a.card:hover > div.skill-item > div.skill-description > h4,
+a.white-btn:hover,
+a.white-btn:hover > i,
+button.white-btn:hover,
+button.white-btn:hover > i,
+button.white-btn.active,
+button.white-btn.active > i{
+    color: #004673;
+}
+
+a.card:hover{
+    border: 2px solid #004673;
+}
+
+.skill-description{
+    text-align: left;
+}
+
+h5{
+    color: #636363;
+}
+
+div.parent-card > h3{
+    align-self: flex-start;
+    border-bottom: 2px solid #ddd;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label{
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    width: 30vw;
+    padding: 15px; 
+    font-size: 18px;
+    margin-bottom: 20px;
+    /* border-radius: 8px; */
+    border: 2px solid #dddddd;
+}
+
+textarea{
+    height: 100px;
+}
+
+button[type=submit]{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* border-radius: 10px; */
+}
+
+button > i{
+    color: #fafafa;
+    font-size: 35px;
+}
+
+.container{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+section.container > div.parent-card:first-child{
+    align-self: stretch;
+}
+
+.container-name{
+    text-align: center;
+}
+
+.skill-item > i{
+    color: #383838;
+    font-size: 35px;
+}
+
+div.skill-item{
+    gap: 10px;
+    padding: 15px;
+    display: flex;
+    text-align: left;
+} 
