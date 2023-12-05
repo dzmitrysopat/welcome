@@ -25,11 +25,15 @@ body{
     flex-direction: column;
     /* background-color: #137bc0; */
     background-color: #fafafa;
-    gap: 100px;
+    gap: 50px;
 }
 
 .logo{
     width: 100px;
+}
+
+main > section{
+    height: 100vh;
 }
 
 
@@ -60,9 +64,26 @@ footer{
     text-transform: uppercase;
 }
 
+footer{
+    background-image: url('./img/footerPattern.png');
+    padding-left: 12.81%;
+    padding-right: 12.81%;
+    padding-top: 50px;
+    padding-bottom: 30vh;
+    background-color: #004673;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    color: #fafafa;
+}
+
+footer > p{
+    color: #fafafa;
+}
+
 .photo{
-    max-width: 60%;
-    border-radius: 5px;
+    max-height: 75%;
+    /* max-width: 40%; */
+    /* border-radius: 5px; */
 }
 
 #home{
@@ -84,7 +105,7 @@ footer{
     font-size: 1.4rem;
     color: #fafafa;
     border: 2px solid #636363;
-    border-radius: 8px;
+    /* border-radius: 8px; */
     padding: 25px 15px;
     background-color: #636363;
     transition: all .4s;
@@ -132,11 +153,12 @@ i{
 }
 
 #about > article{
-    height: 500px;
+    /* height: 500px; */
     width: 70%;
     padding: 50px;
     text-align: end;
     gap: 25px;
+    height: 70vh;
 }
 
 #about > article:first-child{
@@ -188,10 +210,14 @@ i{
     text-align: end;
     padding: 25px;
     word-spacing: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 25px;
 }
 
 .numbers{
-    font-size: 7rem;
+    font-size: 8rem;
 }
 /* color: #ffc924; */
 
@@ -199,11 +225,76 @@ i{
     width: 75%;
 }
 
-a.square{
-    width: 200px;
-    height: 200px;
+div.square{
+    width: 150px;
+    height: 150px;
     color: #fafafa;
-    padding: 0;
-    margin: 0;
     background-color: #004673;
+    align-items: center;
+    display: flex;
+    /* justify-content: center; */
+    position: relative;
+    padding: 10px 10px;
+    transition: all .4s;
+}
+
+div > i{
+    color: #fafafa;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+div.square:hover{
+    scale: 1.05;
+}
+
+.user{
+    width: 170px;
+    align-self: center;
+}
+
+#vacations{
+    display: flex;
+    gap: 15px;
+}
+
+#vacations > article{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 15px;
+    height: fit-content;
+    border-radius: 15px;
+}
+
+#vacations > article > p{
+    font-size: 1.1rem;
+    color: #636363;
+}
+
+#vacations > article:first-child{
+    background-color: #e5ab93;
+    width: fit-content;
+}
+
+#vacations > article:nth-child(2){
+    background-color: #93b9e5;
+}
+
+#vacations > article:nth-child(3){
+    background-color: #e5dd93;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: underline;
+    font-size: 1.5rem;
+}
+
+h3 > i{
+    font-size: 25px;
 }
