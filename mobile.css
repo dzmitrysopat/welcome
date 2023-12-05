@@ -1,0 +1,98 @@
+body{
+    overflow-x: hidden;
+    /* width: 100vw; */
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+@media screen and (max-width: 550px){
+    body{
+        margin: 0 auto;
+    }
+
+    header{
+        display: flex;
+        justify-content: center;
+    }
+
+    main{
+        gap: 0px;
+        /* margin: 10px 0 0 10px; */
+    }
+
+    main > section{
+        height: auto;
+    }
+
+    #home{
+        flex-wrap: wrap-reverse;
+    }
+
+    h1{
+        font-size: 3.5rem;
+    }
+
+    .photo{
+        width: 100vw;
+        height: auto;
+    }
+
+    #about{
+        width: 100vw;
+        flex-wrap: wrap;
+        gap: 0;
+        justify-content: normal;
+    }
+
+    #about > article{
+        width: 100vw;
+        height: 40vh;
+        gap: 50px;
+        align-items: normal;
+    }
+
+    #about > article > h2{
+        font-size: 2rem;
+    }
+
+    #about > article > p{
+        font-size: 1.5rem;
+    }
+
+    #employee > img{
+        margin-top: 650px;
+        display: none;
+    }
+
+    #about > article:nth-child(2){
+        justify-content: flex-start;
+    }
+
+    section#about{
+        height: auto;
+    }
+
+    #vacations{
+        margin-top: 50px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #vacations > article{
+        width: 80vw !important;
+    }
+
+    #steps > article,
+    #gift > article{
+        flex-direction: column;
+    }
+
+    #gift > article{
+        align-items: center;
+    }
+
+    #steps, #gift, #contacts{
+        margin-top: 150px;
+    }
+}
