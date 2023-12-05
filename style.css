@@ -226,8 +226,8 @@ i{
 }
 
 div.square{
-    width: 150px;
-    height: 150px;
+    width: 230px;
+    height: 230px;
     color: #fafafa;
     background-color: #004673;
     align-items: center;
@@ -257,7 +257,7 @@ div.square:hover{
 
 #vacations{
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: stretch;
     align-content: stretch;
     height: max-content;
@@ -273,7 +273,7 @@ div.square:hover{
     border-radius: 15px;
     transition: all .4s;
     cursor: pointer;
-    opacity: 0.9;
+    opacity: 0.7;
     width: fit-content;
 }
 
@@ -321,7 +321,7 @@ div.square:hover{
 }
 
 #vacations > article:nth-child(5) > img.user{
-    width: 200px;
+    width: 192px;
 }
 
 h3{
@@ -342,3 +342,91 @@ hr{
     display: none;
 }
 
+.btn{
+    border: 1px solid #004673;
+    background: #004673;
+    color: #fafafa;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    -webkit-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 10px 10px 8px 0px rgba(34, 60, 80, 0.2);
+    transition: all .4s;
+    opacity: 0.9;
+}
+
+.btn:hover{
+    border: 1px solid #004673;
+    opacity: 1;
+    scale: 1.02;
+}
+
+.number{
+    font-size: 58px;
+    color: #004673;
+}
+
+#steps{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#steps > article{
+    gap: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+#steps > article > div{
+    width: 500px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: px;
+    grid-row-gap: 15px;
+    text-align: left;
+    }
+    
+    #steps > article > div > .number { grid-area: 1 / 1 / 2 / 2; }
+    #steps > article > div > img { grid-area: 1 / 2 / 2 / 3;
+    align-self: center; }
+    #steps > article > div > h3 { grid-area: 2 / 1 / 3 / 3; color: #004673; font-size: 35px;}
+    #steps > article > div > p.description { 
+        grid-area: 3 / 1 / 4 / 3; 
+        background:none;
+        color: #383838;
+        border: none;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    #gift > article{
+        display: flex;
+        gap: 50px;
+        align-items: flex-end;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    #gift > article > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #gift > article >div > h3{
+        color: #004673; font-size: 30px;
+        text-align: center;
+    }
+
+    .gift-img{
+        width: 300px;
+    }
+
+    #gift > article >div:nth-child(5) > img{
+        width: 220px;
+    }
+
+    
