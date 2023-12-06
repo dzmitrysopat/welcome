@@ -28,8 +28,19 @@ body{
         flex-wrap: wrap-reverse;
     }
 
+    .block{
+        margin-left: 15px;
+    }
     h1{
         font-size: 3rem;
+    }
+
+    a.btn{
+        width: 85vw;
+    }
+
+    .block > .white-btn{
+        align-self: center;
     }
 
     .photo{
@@ -45,7 +56,7 @@ body{
     }
 
     #about > article{
-        width: 100vw;
+        width: 95vw;
         height: 40vh;
         gap: 50px;
         align-items: normal;
@@ -59,9 +70,31 @@ body{
         font-size: 1.5rem;
     }
 
+    #about > article:first-child{
+        text-align: left;
+        padding-left: 15px;
+    }
+
+    #about > article:nth-child(2){
+        padding-right: 15px;
+    }
+
+    #about > article > a{
+        font-size: 1.5rem;
+    }
+
     #employee > img{
-        margin-top: 650px;
+        /* margin-top: 650px; */
         display: none;
+    }
+
+    #employee > article > .numbers{
+        font-size: 7rem;
+    }
+
+    #employee > article{
+        font-size: 2rem;
+        width: 100vw;
     }
 
     #about > article:nth-child(2){
@@ -92,8 +125,16 @@ body{
         align-items: center;
     }
 
+    #steps{
+        margin-left: 15px;
+    }
+
     #steps, #gift, #contacts{
         margin-top: 150px;
+    }
+
+    div.gift-container{
+        scale: 0.9;
     }
 
 
@@ -104,6 +145,10 @@ body{
 
     section#contacts > section.container{
         flex-direction: column-reverse;
+    }
+
+    .parent-card{
+        padding: 15px;
     }
 
     section.container > div.parent-card:first-child{
