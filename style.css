@@ -161,7 +161,7 @@ i{
     padding: 50px;
     text-align: end;
     gap: 25px;
-    height: 70vh;
+    height: 100vh;
 }
 
 #about > article:first-child{
@@ -271,7 +271,6 @@ div.square:hover{
 
 #vacations > article,
 .vacations-slider > .swiper > .swiper-wrapper > .swiper-slide{
-    height: 60vh;
     align-self: stretch; 
     display: flex;
     flex-direction: column;
@@ -280,7 +279,7 @@ div.square:hover{
     border-radius: 15px;
     transition: all .4s;
     cursor: pointer;
-    opacity: 0.7;
+    /* opacity: 0.7; */
     width: fit-content;
     justify-content: end;
     /* height: 50vh; */
