@@ -47,11 +47,19 @@ h2{
     color: #004673;
 }
 
+header{
+    background-color: #004673;
+    width: 100vw;
+    position: fixed;
+    z-index: 2;
+}
+
 header, footer{
     padding: 25px 0;
 }
 
 main{
+    margin-top: 150px;
     display: flex;
     flex-direction: column;
     gap: 150px;
