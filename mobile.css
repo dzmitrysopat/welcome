@@ -60,7 +60,7 @@ body{
         flex-direction: column;
         width: 100vw;
         padding: 50px 0 0 0;
-        height: 50vh;
+        height: 60vh;
         gap: 25px;
         align-items: normal;
     }
@@ -98,6 +98,7 @@ body{
     #employee > article{
         font-size: 2rem;
         width: 100vw;
+        height: 100vh;
     }
 
     #about > article:nth-child(2){
