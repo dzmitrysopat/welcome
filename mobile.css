@@ -60,7 +60,7 @@ body{
         flex-direction: column;
         width: 100vw;
         padding: 50px 0 0 0;
-        height: 40vh;
+        height: 50vh;
         gap: 25px;
         align-items: normal;
     }
