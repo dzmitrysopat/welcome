@@ -168,12 +168,21 @@ body{
         border: none;
     }
 
+    section.container > div.parent-card > h3{
+        align-self: center;
+        font-size: 1.5rem;
+        color: #004673;
+    }
+
+    section.container > div.parent-card:first-child > a.card >div.skill-item > i{
+        color: #004673;
+    }
+
     input, textarea{
         width: 80vw;
     }
 
     #steps > article > div {
         width: auto;
-        justify-content: space-;
     }
 }
