@@ -49,8 +49,8 @@ h2{
 
 header{
     background-color: #004673;
-    width: 100vw;
-    position: fixed;
+    /* width: 100vw; */
+    /* position: fixed; */
     z-index: 2;
 }
 
@@ -59,7 +59,7 @@ header, footer{
 }
 
 main{
-    margin-top: 150px;
+    /* margin-top: 150px; */
     display: flex;
     flex-direction: column;
     gap: 150px;
@@ -265,6 +265,7 @@ div.square:hover{
     align-items: stretch;
     align-content: stretch;
     height: max-content;
+    gap: 100px;
     /* position: relative; */
 }
 
@@ -284,7 +285,7 @@ div.square:hover{
     justify-content: end;
     align-self: center;
     /* scale: 1; */
-    height: 800px;
+    height: 50vh;
 }
 
 #vacations >  div > article > h3{
