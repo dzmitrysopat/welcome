@@ -56,9 +56,12 @@ body{
     }
 
     #about > article{
-        width: 95vw;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding: 50px 0 0 0;
         height: 40vh;
-        gap: 50px;
+        gap: 25px;
         align-items: normal;
     }
 

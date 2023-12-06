@@ -6,7 +6,7 @@
     color: #383838;
     padding: 0;
     margin: 0;
-    outline: 2px solid lightgreen;
+    /* outline: 2px solid lightgreen; */
 }
 
 html {
@@ -80,16 +80,12 @@ footer > p{
 
 .photo{
     height: 75vh;
-    /* max-width: 40%; */
-    /* border-radius: 5px; */
 }
 
 #home{
     text-align: start;
     display: flex;
     gap: 50px;
-    /* flex-wrap: wrap-reverse; */
-    /* justify-content: space-between; */
 }
 
 .block{
