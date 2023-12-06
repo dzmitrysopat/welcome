@@ -81,3 +81,28 @@ for (i=0;i<=snowmax;i++) {
 if (browserok) {
         window.onload=initsnow
 }
+
+
+var swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // If we need pagination
+  pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      type: 'bullets',
+  },
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+      delay: 5000,
+  },
+  keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+  },
+});

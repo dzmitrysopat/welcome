@@ -268,9 +268,10 @@ div.square:hover{
     /* position: relative; */
 }
 
-#vacations > article{
+#vacations > article,
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide{
     /* height: 60vh; */
-    align-self: stretch; 
+    /* align-self: stretch;  */
     display: flex;
     flex-direction: column;
     gap: 25px;
@@ -279,7 +280,11 @@ div.square:hover{
     transition: all .4s;
     cursor: pointer;
     opacity: 0.7;
-    width: fit-content;
+    max-width: 100vw;
+    justify-content: end;
+    align-self: center;
+    /* scale: 1; */
+    height: 800px;
 }
 
 #vacations >  div > article > h3{
@@ -291,41 +296,50 @@ div.square:hover{
     opacity: 1;
 }
 
-#vacations > article > p{
+#vacations > article > p,
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide{
     font-size: 1.1rem;
     color: #636363;
 }
 
-#vacations > article:first-child{
+#vacations > article.case:first-child,
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:first-child{
     background-color: #e5ab93;
     width: fit-content;
 }
 
-#vacations >  article:nth-child(2){
+#vacations >  article:nth-child(2),
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(2){
     background-color: #93b9e5;
 }
 
-#vacations > article:nth-child(3){
+#vacations > article:nth-child(3),
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(3){
     background-color: #e5dd93;
 }
 
-#vacations > article:nth-child(4){
+#vacations > article:nth-child(4),
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(4){
     background-color: #a3e593;
 }
 
-#vacations > article:nth-child(5){
+#vacations > article:nth-child(5),
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(5){
     background-color: #a293e5;
 }
 
-#vacations > article:nth-child(2) > img.user{
+#vacations > article:nth-child(2) > img.user,
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(2) > img.user{
     width: 150px;
 }
 
-#vacations > article:nth-child(4) > img.user{
+#vacations > article:nth-child(4) > img.user,
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(4) > img.user{
     width: 275px;
 }
 
-#vacations > article:nth-child(5) > img.user{
+#vacations > article:nth-child(5) > img.user,
+.vacations-slider > .swiper > .swiper-wrapper > .swiper-slide:nth-child(5) > img.user{
     width: 192px;
 }
 
@@ -595,10 +609,11 @@ div.skill-item{
 } 
 
 /* slider */
-#vacations > .swiper{
+/* .vacations-slider > .swiper{
     position: relative;
-    max-width: 500px;
-}
+    max-width: fit-content; */
+    /* align-self: stretch; */
+/* } */
 
 span.swiper-pagination-bullet{
     background-color: #383838;
@@ -629,4 +644,16 @@ div.swiper-button-prev{
 
 .swiper-wrapper{
     padding-bottom: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.vacations-slider{
+    margin-top: 100px;
+    align-items: center;
+    align-self: center;
+    position: relative;
+    width: 440px;
+    height: 5vh;
+    display: none;
 }
